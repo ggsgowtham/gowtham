@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/custom.css">
+	</head>
+	<body>
+		<button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+		<button type="button" class="btn btn-primary" id="registerBtn" >Register</button>
+		<!--Login Panel-->
+		<div class="panel panel-default loginPanelWidth panelHide" id="login">
+			<div class="panel-body">
+			<h4>Login</h4>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1">Email</span>
+			  <input type="text" class="form-control" placeholder="Username" id="userNameLogin"  aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group  input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon2">Password</span>
+			  <input type="password" class="form-control" placeholder="password" id="passwordLogin" aria-describedby="sizing-addon2">
+			</div>
+			<div>
+				<button type="button" class="btn btn-primary" id="loginSubmit">Login</button>
+			</div>
+		</div>
+		</div>
+		<!--Register Panel-->
+		<div class="panel panel-default loginPanelWidth panelHide" id="register">
+			<div class="panel-body">
+			<h4>Register</h4>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1">Email</span>
+			  <input type="text" class="form-control" placeholder="Email" id="registerEmail" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1" >Name</span>
+			  <input type="text" class="form-control" placeholder="Name" id="registerName" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1" >Address</span>
+			  <input type="text" class="form-control" placeholder="Address" id="registerAddress" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group  input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon2" >Password</span>
+			  <input type="password" class="form-control" placeholder="password" id="registerPassword" aria-describedby="sizing-addon2">
+			</div>
+			<div>
+				<button type="button" class="btn btn-primary" id="registerSubmit">Register</button>
+			</div>
+		</div>
+		</div>
+		<!-- user Display Panel -->
+		<div class="panel panel-primary panelHide" id="userPanel">
+		  <div class="panel-heading">User Details</div>
+		  <div class="panel-body" id="userValue">
+			
+		  </div>
+		</div>
+
+		
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="./js/custom.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			fnLogin();
+		});
+	</script>
+</html>
